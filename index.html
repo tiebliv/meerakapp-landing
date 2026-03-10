@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meerakapp™ | Stop Losing HVAC Jobs to Missed Calls</title>
+    <meta name="description" content="The Meerakapp™ 30-Second Responder System helps HVAC contractors recover missed calls with automatic text replies. Stop losing jobs to voicemail.">
+    <meta property="og:title" content="Meerakapp™ | Stop Losing HVAC Jobs to Missed Calls">
+    <meta property="og:description" content="The Meerakapp™ 30-Second Responder System automatically texts homeowners when you miss their call — securing the job before they dial the next company.">
+    <meta property="og:type" content="website">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hvac-blue { color: #1E73BE; }
+        .bg-hvac-blue { background-color: #1E73BE; }
+        .border-hvac-blue { border-color: #1E73BE; }
+        .hover\:bg-hvac-dark:hover { background-color: #165a94; }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; }
+            50%       { opacity: 0.3; }
+        }
+        .fade-up { animation: fadeUp 0.6s ease both; }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.35s; }
+        .delay-4 { animation-delay: 0.5s; }
+        .pulse-dot { animation: pulse-dot 1.5s ease-in-out infinite; }
+
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px; left: 0;
+            width: 0; height: 2px;
+            background: #1E73BE;
+            transition: width 0.25s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+    <!-- NAV -->
+    <nav class="border-b border-gray-100 py-4 px-6 sticky top-0 bg-white/95 backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter hvac-blue uppercase">MEERAKAPP<span class="text-xs align-top">™</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-bold text-slate-600 uppercase tracking-wide">
+                <a href="#problem" class="nav-link hover:text-blue-600 transition">The Revenue Gap</a>
+                <a href="#solution" class="nav-link hover:text-blue-600 transition">How It Works</a>
+                <a href="#benefits" class="nav-link hover:text-blue-600 transition">Business Impact</a>
+            </div>
+            <a href="#cta" class="bg-hvac-blue text-white px-6 py-2 rounded font-bold text-sm hover:bg-hvac-dark transition shadow-md">Get the System Guide</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="relative pt-16 pb-24 lg:pt-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <div class="inline-block bg-blue-50 hvac-blue text-base font-bold px-5 py-2 rounded-full mb-6 uppercase tracking-widest fade-up">Meerakapp™ 30-Second Responder System</div>
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 fade-up delay-1">
+                    Missed Call =<br>Lost Job.
+                </h1>
+                <p class="text-2xl font-bold hvac-blue mb-6 fade-up delay-2">While you're finishing that job, another company just answered your next one.</p>
+                <p class="text-xl text-slate-600 mb-10 leading-relaxed fade-up delay-3">
+                    You're on a rooftop. A homeowner calls. You can't answer. They hang up and call the next guy on Google — and that job is gone forever. The <strong>Meerakapp™ 30-Second Responder System</strong> texts them back before they even dial the competition. No extra staff. No new apps. Just a system that works while you work.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 fade-up delay-4">
+                    <a href="#solution" class="bg-hvac-blue text-white px-8 py-4 rounded font-bold text-center hover:bg-hvac-dark transition shadow-lg shadow-blue-100 uppercase tracking-wide text-sm">See How It Works</a>
+                    <a href="#cta" class="bg-white border-2 border-slate-200 text-slate-800 px-8 py-4 rounded font-bold text-center hover:bg-slate-50 transition uppercase tracking-wide text-sm">Download the Guide</a>
+                </div>
+            </div>
+
+            <!-- PHONE MOCKUP -->
+            <div class="relative max-w-sm mx-auto lg:mr-0 fade-up delay-2">
+                <div class="bg-slate-800 rounded-[3rem] p-3 shadow-2xl">
+                    <div class="bg-slate-50 rounded-[2.5rem] h-[560px] overflow-hidden relative p-5 flex flex-col border border-slate-700">
+                        <div class="w-24 h-6 bg-slate-800 rounded-b-2xl mx-auto mb-6"></div>
+
+                        <!-- Missed call -->
+                        <div class="bg-white border border-slate-200 rounded-2xl p-4 mb-6 shadow-sm">
+                            <div class="flex items-center gap-3">
+                                <div class="bg-red-100 p-2 rounded-full">
+                                    <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">12:05 PM</p>
+                                    <p class="text-sm font-bold text-slate-900">Missed: (555) 293-4822</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SMS conversation -->
+                        <div class="space-y-4">
+                            <div class="flex flex-col items-end">
+                                <p class="text-[9px] text-slate-400 mb-1 mr-1 uppercase font-bold">System · 12:05:30 PM</p>
+                                <div class="bg-hvac-blue text-white rounded-2xl rounded-tr-none p-3 text-xs shadow-md max-w-[85%]">
+                                    "Sorry we missed your call! We're on a service call right now. Are you looking for emergency AC repair or a free install quote?"
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start">
+                                <p class="text-[9px] text-slate-400 mb-1 ml-1 uppercase font-bold">Homeowner</p>
+                                <div class="bg-white border border-slate-200 text-slate-800 rounded-2xl rounded-tl-none p-3 text-xs shadow-sm max-w-[85%]">
+                                    "AC just died. It's 95° in here — need someone today!"
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-end">
+                                <div class="bg-hvac-blue text-white rounded-2xl rounded-tr-none p-3 text-xs shadow-md max-w-[85%]">
+                                    "Got it. Reply YES and our lead tech will call you next."
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start">
+                                <div class="bg-white border border-slate-200 text-slate-800 rounded-2xl rounded-tl-none p-3 text-xs shadow-sm max-w-[85%]">
+                                    "YES please!"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Live indicator -->
+                <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white border border-slate-200 rounded-full px-4 py-2 shadow-lg flex items-center gap-2">
+                    <span class="w-2 h-2 bg-green-500 rounded-full pulse-dot"></span>
+                    <span class="text-xs font-bold text-slate-700 uppercase tracking-wide">System Active</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section id="problem" class="py-24 bg-slate-50 border-y border-slate-200">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-extrabold mb-4 text-center">You're Losing Real Money. Right Now. Today.</h2>
+            <p class="text-center text-slate-700 mb-3 text-lg font-bold italic">Imagine if your phone never missed another job...</p>
+            <p class="text-center text-slate-500 mb-16 text-sm uppercase tracking-widest font-bold">Average HVAC ticket: $380. Missing 3 calls a week = <span class="text-red-500 not-italic">$5,700/month</span> walking out the door.</p>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16 text-center">
+                <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm">
+                    <div class="text-4xl mb-4">🛠️</div>
+                    <h3 class="font-bold text-lg mb-2">You Can't Stop Mid-Job</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">You're holding a manifold gauge or wiring a compressor. The phone rings. You can't get to it. That's not a mistake — that's the job. But the lead doesn't care.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm">
+                    <div class="text-4xl mb-4">📠</div>
+                    <h3 class="font-bold text-lg mb-2">They Don't Leave Voicemails</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">They hang up in 4 seconds and scroll back to Google. Your voicemail doesn't even get a chance. They're already calling the next guy down the list.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm">
+                    <div class="text-4xl mb-4">⏱️</div>
+                    <h3 class="font-bold text-lg mb-2">First Response Wins. Period.</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">The average homeowner calls 3 companies. Whoever responds first gets the $380 ticket — not the best company on the list. The fastest one.</p>
+                </div>
+            </div>
+
+            <!-- Revenue flow -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+                <div class="flex flex-col md:flex-row items-center justify-around text-center gap-6">
+                    <div>
+                        <p class="text-slate-400 uppercase text-xs font-bold mb-2 tracking-widest">Step 1</p>
+                        <p class="text-xl font-extrabold text-slate-700">Missed Call</p>
+                        <p class="text-xs text-slate-400 mt-1">Silence. No callback.</p>
+                    </div>
+                    <div class="text-slate-300 text-3xl font-thin hidden md:block">→</div>
+                    <div>
+                        <p class="text-slate-400 uppercase text-xs font-bold mb-2 tracking-widest">Step 2</p>
+                        <p class="text-xl font-extrabold text-slate-700">Competitor Hired</p>
+                        <p class="text-xs text-slate-400 mt-1">They answered first.</p>
+                    </div>
+                    <div class="text-red-300 text-3xl font-thin hidden md:block">→</div>
+                    <div>
+                        <p class="text-red-500 uppercase text-xs font-bold mb-2 tracking-widest">Result</p>
+                        <p class="text-2xl font-extrabold text-red-600">$0.00</p>
+                        <p class="text-xs text-red-400 mt-1">Revenue for your shop.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section id="solution" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold mb-4">How the 30-Second Responder Works</h2>
+                <p class="text-slate-500 text-sm uppercase tracking-widest font-bold">No complex apps. No new hardware. Just faster response times.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm relative overflow-hidden">
+                    <span class="text-slate-100 text-7xl font-black absolute -top-2 -right-2 leading-none select-none">01</span>
+                    <h3 class="font-extrabold mb-3 text-slate-900 relative text-lg">The Ping</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed relative">The system monitors your existing office or mobile line for any call that isn't picked up.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm relative overflow-hidden">
+                    <span class="text-slate-100 text-7xl font-black absolute -top-2 -right-2 leading-none select-none">02</span>
+                    <h3 class="font-extrabold mb-3 text-slate-900 relative text-lg">The Auto-Reply</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed relative">Within 30 seconds, a professional SMS is sent directly to the caller's mobile number.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm relative overflow-hidden">
+                    <span class="text-slate-100 text-7xl font-black absolute -top-2 -right-2 leading-none select-none">03</span>
+                    <h3 class="font-extrabold mb-3 text-slate-900 relative text-lg">The Engagement</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed relative">The homeowner replies with their issue — effectively locking in with your shop instead of calling someone else.</p>
+                </div>
+                <div class="bg-hvac-blue p-8 rounded-xl shadow-lg relative overflow-hidden text-white">
+                    <span class="text-white/10 text-7xl font-black absolute -top-2 -right-2 leading-none select-none">04</span>
+                    <h3 class="font-extrabold mb-3 relative text-lg">The Win</h3>
+                    <p class="text-sm leading-relaxed opacity-90 relative">Your dispatch gets the homeowner's details, problem, and urgency — ready to schedule and close the job.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEMO -->
+    <section id="demo" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold mb-4">This Is What You're Losing Right Now</h2>
+                <p class="text-slate-400 text-sm uppercase tracking-widest font-bold">And exactly how the system stops it</p>
+            </div>
+
+            <div class="space-y-4 max-w-lg mx-auto">
+                <div class="flex items-start gap-5 bg-slate-800 p-5 rounded-xl border border-slate-700">
+                    <div class="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center font-extrabold text-red-400 shrink-0">1</div>
+                    <div>
+                        <p class="font-bold text-sm mb-1">2:00 PM — Homeowner calls. No answer.</p>
+                        <p class="text-slate-400 text-xs">Your tech is knee-deep in a condenser swap. Phone rings out. That's a $380+ ticket about to walk.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-5 bg-slate-800 p-5 rounded-xl border border-slate-700">
+                    <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center font-extrabold text-blue-400 shrink-0">2</div>
+                    <div>
+                        <p class="font-bold text-sm mb-1">2:00:30 PM — They get a text from your number.</p>
+                        <p class="text-slate-400 text-xs">"Sorry we missed you — are you looking for emergency repair or a quote?" Automatic. Instant. Professional.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-5 bg-hvac-blue p-5 rounded-xl border border-blue-400">
+                    <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center font-extrabold text-hvac-blue shrink-0">3</div>
+                    <div>
+                        <p class="font-bold text-sm mb-1">They reply. They stop dialing. Job secured.</p>
+                        <p class="text-blue-100 text-xs">Your dispatcher gets their info and books the ticket. Your competitor never even got the call.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section id="benefits" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold mb-4">This System Works Because Your Business Doesn't Stop</h2>
+                <p class="text-slate-500 text-sm uppercase tracking-widest font-bold">Built around how HVAC shops actually operate</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="border-t-2 border-hvac-blue pt-6">
+                    <h3 class="font-extrabold text-lg mb-3 hvac-blue">Protect Your Ad Spend</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Paying for Local Services Ads or Google Maps clicks? Every missed call is ad spend with zero return. This system makes sure every dollar you spend on marketing actually lands a job.</p>
+                </div>
+                <div class="border-t-2 border-hvac-blue pt-6">
+                    <h3 class="font-extrabold text-lg mb-3 hvac-blue">Outwork the Big Guys</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">The big franchise down the road has a 10-person call center. You have the 30-Second Responder. Same response speed. A fraction of the cost. Level playing field.</p>
+                </div>
+                <div class="border-t-2 border-hvac-blue pt-6">
+                    <h3 class="font-extrabold text-lg mb-3 hvac-blue">Zero Learning Curve</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Your guys don't touch a thing. No new logins, no training, no headaches. It runs on your existing number in the background while your crew stays focused on the work.</p>
+                </div>
+                <div class="border-t-2 border-hvac-blue pt-6">
+                    <h3 class="font-extrabold text-lg mb-3 hvac-blue">Book Jobs on Weekends</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Saturday night AC failure calls don't wait until Monday morning. The system captures the lead, gets their info, and has it ready for dispatch — while you're off the clock.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA + LEAD FORM -->
+    <section id="cta" class="py-24 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-slate-900 rounded-[2.5rem] p-8 md:p-16 shadow-2xl overflow-hidden">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-white mb-4 uppercase leading-tight">Get the System Guide</h2>
+                        <p class="text-slate-400 text-base mb-6 leading-relaxed">
+                            You're already doing the hard work — fixing systems, running a crew, managing the calls you <em>can</em> answer. This guide shows you how to stop hemorrhaging the ones you can't. The <strong class="text-white">Meerakapp™ 30-Second Responder System Guide</strong> is a step-by-step setup built specifically for HVAC contractors.
+                        </p>
+                        <p class="text-white text-sm font-bold mt-4 leading-relaxed">Every missed call gives another company a shot at the job. Get the System Guide now.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <form id="leadForm" class="space-y-4">
+                            <input id="name" type="text" required
+                                class="w-full px-4 py-3 border border-slate-200 rounded-lg text-sm focus:border-blue-500 outline-none transition"
+                                placeholder="Your Name">
+                            <input id="company" type="text" required
+                                class="w-full px-4 py-3 border border-slate-200 rounded-lg text-sm focus:border-blue-500 outline-none transition"
+                                placeholder="Company Name">
+                            <input id="email" type="email" required
+                                class="w-full px-4 py-3 border border-slate-200 rounded-lg text-sm focus:border-blue-500 outline-none transition"
+                                placeholder="Work Email">
+                            <input id="phone" type="tel" required
+                                class="w-full px-4 py-3 border border-slate-200 rounded-lg text-sm focus:border-blue-500 outline-none transition"
+                                placeholder="Best Contact Number">
+                            <p id="phoneError" class="text-red-500 text-[10px] hidden font-bold uppercase tracking-wide">Valid 10-digit number required</p>
+                            <button type="submit" id="submitBtn"
+                                class="w-full bg-hvac-blue text-white py-4 rounded-lg font-extrabold uppercase tracking-widest text-xs hover:bg-hvac-dark transition shadow-lg">
+                                Send Me the System Guide
+                            </button>
+                        </form>
+
+                        <!-- Success state (hidden by default) -->
+                        <div id="successMsg" class="hidden text-center py-4">
+                            <div class="text-4xl mb-3">✅</div>
+                            <p class="font-extrabold text-slate-800 text-lg mb-1">You're all set!</p>
+                            <p class="text-slate-500 text-sm">Check your inbox — the Meerakapp™ System Guide is on its way.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-slate-200 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div>
+                    <div class="text-xl font-black hvac-blue mb-1 tracking-tighter uppercase">MEERAKAPP<span class="text-[10px] align-top">™</span></div>
+                    <p class="text-xs font-bold uppercase tracking-widest text-slate-400">HVAC Lead Recovery Systems</p>
+                    <p class="text-xs mt-3 italic text-slate-400">© 2026 Meerakapp™ · Built for the Trade.</p>
+                </div>
+                <div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-500">
+                    <a href="#cta" class="hover:text-blue-600 transition">System Guide</a>
+                    <a href="#demo" class="hover:text-blue-600 transition">See Demo</a>
+                    <a href="mailto:support@meerakapp.com" class="hover:text-blue-600 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.getElementById('leadForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const submitBtn = document.getElementById('submitBtn');
+        const phoneInput = document.getElementById('phone');
+        const phoneError = document.getElementById('phoneError');
+        const phoneValue = phoneInput.value.replace(/\D/g, '');
+
+        // Validate phone
+        if (phoneValue.length < 10) {
+            phoneError.classList.remove('hidden');
+            phoneInput.classList.add('border-red-400');
+            return;
+        }
+        phoneError.classList.add('hidden');
+        phoneInput.classList.remove('border-red-400');
+
+        // Loading state
+        submitBtn.innerText = 'Sending...';
+        submitBtn.disabled = true;
+
+        const leadData = {
+            name: document.getElementById('name').value,
+            company: document.getElementById('company').value,
+            email: document.getElementById('email').value,
+            phone: phoneValue,
+            source: 'Meerakapp Landing Page',
+            timestamp: new Date().toISOString()
+        };
+
+        try {
+            // 🔁 Replace with your Make.com webhook URL
+            await fetch('https://hook.us1.make.com/your-unique-webhook-id', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(leadData)
+            });
+        } catch (err) {
+            // Silently continue — still show success
+        }
+
+        // Show success message
+        document.getElementById('leadForm').classList.add('hidden');
+        document.getElementById('successMsg').classList.remove('hidden');
+    });
+    </script>
+</body>
+</html>
